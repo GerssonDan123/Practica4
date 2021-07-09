@@ -21,19 +21,19 @@ public class Class_Client
     public static void main(String[] args)
     {
         
-        DataOutputStream ValorSalida; //output
-        BufferedInputStream BuffInput; //bis
-        BufferedOutputStream BuffOutput; //bos
+        DataOutputStream ValorSalida; 
+        BufferedInputStream BuffInput;
+        BufferedOutputStream BuffOutput; 
     
-        byte[] ArrayBytes; //receiveData
-        int ValorNum; //in
-        String Directorio; //file
+        byte[] ArrayBytes; 
+        int ValorNum; 
+        String Directorio;
         
         Scanner sc = new Scanner(System.in);
         String ip = JOptionPane.showInputDialog("Ingresa la ip");
         
         try
-        {          //client     
+        {               
             Socket Sck_Client = new Socket(ip, 5000);
             
             ValorSalida = new DataOutputStream(Sck_Client.getOutputStream());
