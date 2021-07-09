@@ -40,7 +40,7 @@ public class Class_Client
         
             ArrayBytes = new byte[1024];
             BuffInput = new BufferedInputStream(Sck_Client.getInputStream());
-                            //dis
+                            
             DataInputStream DInputS = new DataInputStream(Sck_Client.getInputStream());
             
             String nombre = JOptionPane.showInputDialog("Ingrese el nombre del archivo");
